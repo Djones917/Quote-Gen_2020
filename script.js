@@ -12,11 +12,9 @@ async function getQuote() {
    const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
    try {
        const response = await fetch(proxyUrl + apiUrl);
-       const data = await response.json();
-       console.log(data);
+       const data = await response.json();       
    } catch (error) {
-       getQuote();
-       console.log('No Quote!', error);
+       getQuote();       
    }
 }
 
