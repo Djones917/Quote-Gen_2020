@@ -15,8 +15,9 @@ async function getQuote() {
        const data = await response.json();   
        if (data.quoteAuthor === '') {
            authorText.innerText = 'Unknown';
-       } 
-       authorText.innerText = data.quoteAuthor;
+       } else {
+           authorText.innerText = data.quoteAuthor;
+       }      
        quoteText.innerText = data.quoteText;  
    } catch (error) {
        getQuote();       
