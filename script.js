@@ -45,7 +45,10 @@ async function getQuote() {
        // Stop Loader, Show Quote
        hideLoadingSpinner(); 
    } catch (error) {
-       getQuote();       
+       //getQuote();
+       hideLoadingSpinner();
+      quoteText.innerText = 'Please try again later! I broke my chalk!';
+      authorText.innerText = 'The Dragon';
    }
 }
 
