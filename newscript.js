@@ -1,2 +1,4 @@
 // Get Quotes From API
-console.log('Connected!');
+async function getQuotes() {
+    const apiUrl = 'https://type.fit/api/quotes';
+}
