@@ -19,4 +19,4 @@ function newQuote() {
 // }
 
 // On Load
-getQuotes();
+// getQuotes();
